@@ -1,0 +1,76 @@
+.top-header {
+    display: flex;
+    justify-content: center;
+}
+
+.second-header {
+    background-image: url('./img/image-michael-jordan.png');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    width: 100%; /* Garante que o header ocupe 100% da largura da tela */
+    height: 300px; /* Define uma altura fixa para o header, ajuste conforme necessário */
+    display: flex; /* Usado para alinhar os conteúdos dentro do header */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    color: white; /* Cor do texto (pode ser ajustada conforme o conteúdo) */
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .second-header {
+      height: 200px; /* Ajusta a altura para telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .second-header {
+      height: 150px; /* Ajusta ainda mais para telas muito pequenas */
+    }
+  }
+
+  .content-body {
+    text-align: center;
+  }
+
+  /* Container dos produtos */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 produtos por linha na versão web */
+    gap: 20px; /* Espaço entre os produtos */
+    padding: 20px; /* Espaçamento interno */
+  }
+  
+  .product {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  
+  /* Responsividade para tablet (2 produtos por linha) */
+  @media (max-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha no tablet */
+    }
+  }
+  
+  /* Responsividade para mobile (1 produto por linha) */
+  @media (max-width: 480px) {
+    .product-container {
+      grid-template-columns: 1fr; /* 1 produto por linha no mobile */
+    }
+  }
+  
+.desc-prod {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.logoheader{
+
+    max-width: 800px;
+    width: 100%;
+
+
+}
